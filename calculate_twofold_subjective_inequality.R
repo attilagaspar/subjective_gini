@@ -60,5 +60,5 @@ ISSP5$q_bottom <- ( ISSP5$w_bottom * ISSP5$f_bottom ) /ISSP5$w_bar
 # calculate area under the Lorenz curve
 ISSP5$A <- (ISSP5$f_top * ISSP5$q_top)/2 + (ISSP5$f_middle * ISSP5$q_middle)/2 + (ISSP5$f_bottom * ISSP5$q_bottom)/2 + ISSP5$f_middle * ISSP5$q_bottom + ISSP5$f_top * ISSP5$q_middle + ISSP5$f_top * ISSP5$q_bottom  
 
-# calculate double-subjective Gini coefficient
-ISSP5$DSGini <- 1 - 2*ISSP5$A
+# calculate twofold-subjective income Gini coefficient
+ISSP5$TSGini <- 1 - 2*ISSP5$A
